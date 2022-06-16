@@ -4,7 +4,6 @@
   box-sizing: border-box;
   list-style: none;
 }
-
 :root {
   --cor-primaria: #191d2b;
   --cor-secudaria: #27ae60;
@@ -20,27 +19,23 @@
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 1px rgba(0, 0, 0, 0.3);
 }
-
 body {
   background-color: var(--cor-primaria);
   font-size: 1.1rem;
   color: var(--cor-branca);
   transition: all 0.4s ease-in-out;
 }
-
 a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
   font-family: inherit;
 }
-
 header {
   height: fixed;
   color: var(--cor-branca);
   overflow: hidden;
 }
-
 section {
   position: absolute;
   width: 100%;
@@ -49,38 +44,32 @@ section {
   padding: 3rem 18rem;
   min-height: 100vh;
 }
-
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--cor-primaria);
 }
-
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
+//Controlls
 .controlls {
   position: fixed;
   z-index: 10;
@@ -91,28 +80,28 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+  .active-btn {
+    background-color: var(--cor-secudaria) !important;
+    transition: all 0.4s ease-in-out;
+    i {
+      color: var(--cor-branca) !important;
+    }
+  }
+  .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--cor-cinza-4);
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
+    i {
+      font-size: 1.2rem;
+      color: var(--cor-cinza-2);
+      pointer-events: none;
+    }
+  }
 }
-.controlls .active-btn {
-  background-color: var(--cor-secudaria) !important;
-  transition: all 0.4s ease-in-out;
-}
-.controlls .active-btn i {
-  color: var(--cor-branca) !important;
-}
-.controlls .control {
-  padding: 1rem;
-  cursor: pointer;
-  background-color: var(--cor-cinza-4);
-  width: 55px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.7rem 0;
-  box-shadow: var(--box-shadow-1);
-}
-.controlls .control i {
-  font-size: 1.2rem;
-  color: var(--cor-cinza-2);
-  pointer-events: none;
-}/*# sourceMappingURL=style.css.map */
